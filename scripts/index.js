@@ -1,23 +1,23 @@
 (()=> {
     let navList = document.querySelectorAll('nav a');
     let sections = document.querySelectorAll('section');
-    window.addEventListener('scroll', () => {
-        if (window.scrollY >= header.scrollHeight){
-            topBar.classList.add('transMenu');
-            topBar.classList.remove('returnBG');
-            let logo = document.getElementById('logo');
+    // window.addEventListener('scroll', () => {
+    //     if (window.scrollY >= header.scrollHeight){
+    //         topBar.classList.add('transMenu');
+    //         topBar.classList.remove('returnBG');
+    //         let logo = document.getElementById('logo');
 
-            logo.setAttribute('src', './images/allhands.png');
-            return;
-        }
+    //         logo.setAttribute('src', './images/allhands.png');
+    //         return;
+    //     }
 
-        topBar.classList.remove('transMenu');
-        topBar.classList.add('returnBG');
-        logo.setAttribute('src', './images/allhandswhite.png');
+    //     topBar.classList.remove('transMenu');
+    //     topBar.classList.add('returnBG');
+    //     logo.setAttribute('src', './images/allhands.png');
 
-        return;
+    //     return;
         
-    });
+    // });
 
 
     let dShow = false;
