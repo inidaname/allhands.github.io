@@ -5,7 +5,7 @@
 }
 
 body, html {
-    width: 99vw;
+    width: 98vw;
     margin: auto;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -182,6 +182,7 @@ main .team {
 
 main .clients {
     min-height: 300px;
+    width: 100%;
 }
 
 .clients ul {
@@ -196,16 +197,98 @@ main .clients {
 
 /* Footer layout */
 footer .contact {
-    height: 330px;
+    min-height: 330px;
+    margin-bottom: 50px;
 }
 
 .contact > div {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 6px;
+}
+
+.contact-form {
+    box-shadow: 0px 0px 2px #ccc;
+    padding: 22px;
+    border-radius: 12px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+.form-group {
+    margin: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.contact-form .button {
+    align-self: flex-end;
+}
+
+.button button {
+    width: 120px;
+    height: 40px;
+    border: 0;
+    box-shadow: 0px 0px 2px 1px #ccc;
+    border-radius: 6px;
+    margin-right: 15px;
+}
+
+.inline-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inline-form > .form-group {
+    width: 45%;
+    padding: 5px;
+    margin-bottom: 0;
+}
+
+.form-group input {
+    width: 100%;
+    border: 0;
+    box-shadow: 0px 0px 2px #999;
+    height: 33px;
+    border-radius: 5px;
+    line-height: 23px;
+    background-color: #eee;
+}
+
+.form-group textarea {
+    height: 130px;
+    width: 95%;
+    box-shadow: 0px 0px 2px #999;
+    border: 0;
+    border-radius: 5px;
+    line-height: 23px;
+    background-color: #eee;
+}
+
+.form-group label {
+    margin-bottom: 10px;
 }
 
 .details {
+    /* border: 1px solid #000; */
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px #ccc;
     padding: 12px;
+    align-self: stretch;
 }
 
 .details p {
@@ -219,16 +302,15 @@ footer .contact {
 footer .socials {
     align-items: center;
     height: 90px;
+    padding: 12px;
 }
 
 .socials span {
     flex-grow: 6;
-    border: 1px solid #000;
 }
 
 .socials ul {
     flex-grow: 2;
-    border: 1px solid #000;
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -336,11 +418,14 @@ section {
 
     .about > div div {
         width: 45%;
-        border: 1px solid #000;
     }
 
     .section > div {
         width: 75%;
+    }
+
+    .section {
+        margin: 45px auto;
     }
 
     .contact > div {
@@ -350,8 +435,13 @@ section {
     }
 
     .contact > div > div {
-        border: 1px solid #000;
         width: 45%;
+    }
+
+    footer .socials {
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+        box-shadow: 0px -2px 1px #ccc;
     }
 }
 
