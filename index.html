@@ -37,7 +37,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente magni adipisci illum placeat labore praesentium, dolorem minima. Porro tempore possimus sed culpa. Suscipit eos quam natus vero a quia quasi?</p>
             </div>
             <div class="imageDP">
-                <img src="./images/man.png" width="100%" alt="">
+                <img src="./images/man.png" lazy-load width="100%" alt="">
             </div>
         </section>
     </header>
@@ -53,9 +53,13 @@
         </section>
         <section class="section team">
             <h3>The Team</h3>
-            <div>
+            <div class="team-list">
                 <figure>
-                    <img src="" alt="">
+                    <picture>
+                        <!-- <source media="(min-width:650px)" srcset="./images/mine.jpg">
+                        <source media="(min-width:465px)" srcset="./images/mine.jpg"> -->
+                        <img src="./images/mine.jpg" class="team-list-image" alt="">
+                    </picture> 
                     <figcaption>Name</figcaption>
                 </figure>
                 <figure>
