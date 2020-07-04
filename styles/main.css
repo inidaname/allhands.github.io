@@ -166,7 +166,13 @@ main .team {
     min-height: 300px;
 }
 
-.team > div {
+.team-list-image {
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.team-list {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -174,10 +180,16 @@ main .team {
     align-items: center;
 }
 
-.team figure {
-    border: 1px solid #000;
+.team-list figure {
+    box-shadow: 0px 0px 4px #999;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     width: 259px;
     margin: 20px auto;
+}
+
+.team-list figcaption {
+    padding: 12px 8px;
 }
 
 main .clients {
@@ -442,6 +454,11 @@ section {
         border-top-right-radius: 12px;
         border-top-left-radius: 12px;
         box-shadow: 0px -2px 1px #ccc;
+    }
+
+    .team-list figure {
+        width: 209px;
+        margin: 20px auto;
     }
 }
 
