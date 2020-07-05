@@ -45,6 +45,8 @@ footer {
 header #topBar {
     position: fixed;
     background: white;
+    display: flex;
+    align-items: center;
 }
 
 header .returnBG {
@@ -128,21 +130,30 @@ span[class="first"] {
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    padding-right: 19px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .menu ul {
-    width: 90vw;
+    width: 100vw;
     position: absolute;
-    top: 41px;
+    top: 61px;
+    background-color: #fff;
+    right: 0;
+    height: 30vh;
     list-style: none;
     display: none;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: flex-end;
 }
 
 .menu ul li {
-    font-size: 12px;
+    width: 100%;
+    text-align: right;
+    padding: 12px 21px;
+    font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
@@ -377,7 +388,6 @@ section {
 
     #topBar {
         height: 87px;
-        align-items: center;
     }
 
     .menu {
@@ -394,12 +404,14 @@ section {
         align-items: center;
         width: 100%;
         position: static;
-        top: 0;
+        height: unset;
         justify-content: space-evenly;
     }
 
     .menu ul li {
         font-size: 16px;
+        text-align: center;
+        width: auto;
     }
 
     .main-top {
